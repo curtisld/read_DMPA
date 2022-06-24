@@ -9,5 +9,8 @@ read_DMPA <- function(filename, path = '//kc.kingcounty.lcl/dnrp/LAB/Reports/',.
                                         PROJECT = col_character(),
                                         SAMPLE_DEPTH = col_double(),
                                         MDL = col_double(),
-                                        RDL = col_double()), delim = "\t")
+                                        RDL = col_double()),
+                                        trim_ws = TRUE,
+                                        na = c("","NA"),
+                                        delim = "\t")
 }
