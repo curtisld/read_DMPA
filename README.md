@@ -11,9 +11,3 @@ unique(df$QUALIFIER)  <br>
 unique(df$PARMNAME) #typically 17 (now 18 - E. coli!)  <br>
 unique(df$METHOD) #typically 12 (now 13 - E. coli!)  <br>
 unique(df$TEXTVALUE)  <br>
-
-
-*TEXTVALUE no longer empty, but instead has spaces when there is no text* <br>
-tmp <- subset(df,!is.na(df$TEXTVALUE))  <br>
-tmp <- subset(df,grepl("  ",df$TEXTVALUE))  <br>
-tmp <- subset(df,grepl(" ",df$TEXTVALUE))
